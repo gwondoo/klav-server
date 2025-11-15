@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  django:
+    build: ./backend
+    container_name: klav_django
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    restart: always
+
+  websocket:
+    build: ./websocket
+    container_name: klav_websocket
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./websocket:/app
+    restart: always
