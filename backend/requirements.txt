@@ -5,6 +5,7 @@ asgiref==3.10.0
 certifi==2025.11.12
 click==8.3.0
 Django==5.2.8
+django-cors-headers==4.9.0
 djangorestframework==3.16.1
 djangorestframework_simplejwt==5.5.1
 fastapi==0.121.2
