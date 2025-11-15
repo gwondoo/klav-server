@@ -6,8 +6,8 @@ services:
     container_name: klav_django
     ports:
       - "8000:8000"
-    volumes:
-      - ./backend:/app
+    env_file:
+      - .env
     restart: always
 
   websocket:
@@ -15,6 +15,6 @@ services:
     container_name: klav_websocket
     ports:
       - "5000:5000"
-    volumes:
-      - ./websocket:/app
+    env_file:
+      - .env
     restart: always
