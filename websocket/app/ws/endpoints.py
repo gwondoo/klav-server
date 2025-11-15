@@ -16,9 +16,8 @@ async def websocket_room_endpoint(
     room_id: int,
     token: Optional[str] = Query(default=None),
 ):
-    # 1) 토큰 추출 (쿼리 파라미터 기준, 필요하면 헤더에서 꺼내도 됨)
+    # 1) 토큰 추출
     if not token:
-        # 헤더에서 꺼내고 싶다면 여기에 로직 추가 가능
         await websocket.close(code=4401)
         return
 
@@ -35,7 +34,7 @@ async def websocket_room_endpoint(
     # 3) 연결 등록
     await manager.connect(room_id, websocket)
 
-    # 4) 입장 브로드캐스트 (옵션)
+    # 4) 입장 브로드캐스트
     await manager.broadcast(
         room_id,
         {
