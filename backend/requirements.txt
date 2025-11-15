@@ -8,11 +8,13 @@ Django==5.2.8
 djangorestframework==3.16.1
 djangorestframework_simplejwt==5.5.1
 fastapi==0.121.2
+gunicorn==23.0.0
 h11==0.16.0
 httpcore==1.0.9
 httptools==0.7.1
 httpx==0.28.1
 idna==3.11
+packaging==25.0
 psycopg2-binary==2.9.11
 pydantic==2.12.4
 pydantic-settings==2.12.0
