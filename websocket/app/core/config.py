@@ -2,9 +2,16 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    # url 변경 시 환경변수 DJANGO_BASE_URL로 설정 가능
-    DJANGO_BASE_URL: str = "http://127.0.0.1:8000"
-    
+    # Django REST API
+    DJANGO_BASE_URL: str
+
+    # JWT
+    JWT_SECRET: str
+    JWT_ALGORITHM: str = "HS256"
+
+    # FastAPI WebSocket
+    WS_PORT: int = 5000
+
     class Config:
         env_file = ".env"
 
