@@ -209,3 +209,4 @@ __marimo__/
 
 *.zip
 legacy/__pycache__/*.pyc
+server.py

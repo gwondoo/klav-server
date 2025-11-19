@@ -1,0 +1,24 @@
+# FastAPI 관련
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+websockets==12.0
+python-multipart==0.0.6
+
+# 데이터베이스
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+
+# 인증
+pyjwt==2.8.0
+python-jose[cryptography]==3.3.0
+
+# 데이터 검증
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# 환경변수
+python-dotenv==1.0.0
+
+# 유틸리티
+python-dateutil==2.8.2
