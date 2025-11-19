@@ -208,4 +208,4 @@ __marimo__/
 .DS_Store
 
 *.zip
-*.pyc
+legacy/__pycache__/*.pyc
